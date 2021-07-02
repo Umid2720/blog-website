@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#d-f, .zakaz, body header .header-content div, body header nav, body header nav .logo, body header nav .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.zakaz, body header .header-content div {
+  width: 215px;
+  height: 48px;
+  background: #fff;
+  border-radius: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.zakaz img, body header .header-content div img {
+  margin-left: 5px;
+  margin-right: 14px;
+}
+
+.zakaz a, body header .header-content div a {
+  color: #52bfff;
+  font-family: "Gotham Pro Bold";
+}
+
+body {
+  width: 1440px;
+  color: #7a7a7a;
+  font-family: "Gotham Pro";
+  background-color: #e5e5e5;
+}
+
+body .wrapper, body main .why-us {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+body header {
+  height: 900px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+body header nav {
+  height: 102px;
+  margin-top: -2px;
+}
+
+body header nav .logo img {
+  margin-left: 15px;
+}
+
+body header nav .logo img:first-child {
+  margin-top: -8px;
+  margin-left: 3px;
+}
+
+body header nav .logo img:last-child {
+  margin-left: -11px;
+  margin-right: 1px;
+}
+
+body header nav .menu {
+  list-style: none;
+}
+
+body header nav .menu li {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+body header nav .menu li:last-child {
+  margin: 0;
+}
+
+body header nav .menu li a {
+  font-size: 14px;
+  color: #7a7a7a;
+  font-family: "Gotham Pro Medium";
+}
+
+body header nav .language ul {
+  margin-left: 36px;
+  margin-right: 5px;
+}
+
+body header nav .language ul li {
+  display: inline-block;
+}
+
+body header nav .language ul li a {
+  font-size: 12px;
+  color: #7a7a7a;
+  font-family: sans-serif;
+}
+
+body header nav .language ul li:first-child {
+  margin-right: 19px;
+}
+
+body header nav .language ul li:first-child a {
+  color: #52bfff;
+  font-family: "Gotham Pro Bold";
+}
+
+body header .header-content h1 {
+  width: 721px;
+  height: 120px;
+  font-size: 44px;
+  margin-top: 99px;
+  font-weight: 700;
+  line-height: 60px;
+  font-family: "Gotham Pro Bold";
+}
+
+body header .header-content h1 span {
+  color: #52bfff;
+}
+
+body header .header-content p {
+  width: 677px;
+  height: 78px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 27px;
+  line-height: 26px;
+  color: #7a7a7a;
+  font-family: "Gotham Pro";
+}
+
+body header .header-content div {
+  width: 240px;
+  background: #52bfff;
+  margin-top: 51px;
+}
+
+body header .header-content div img {
+  margin-right: 16px;
+}
+
+body header .header-content div a {
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+body header .header-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 319px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .header-footer div {
+  font-family: "Gotham Pro";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  margin-right: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .header-footer div:nth-child(odd) {
+  font-family: "Gotham Pro Bold";
+}
+
+body header .header-footer div img {
+  margin-right: 10px;
+}
+
+body header .header-footer .last-child {
+  margin-left: 32px;
+}
+
+body header .header-footer .tree {
+  top: -181px;
+  left: -150px;
+  position: absolute;
+}
+
+body main {
+  margin-top: 98px;
+}
+
+body main span {
+  font-weight: 700;
+}
+
+body main h1 {
+  font-size: 36px;
+  color: #52bfff;
+  font-family: "Gotham Pro Bold";
+}
+
+body main .why-us {
+  font-size: 18px;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+body main .why-us .why-us-heading {
+  width: 437px;
+  height: 52px;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
+body main .why-us .why-us-heading h1 {
+  margin-top: 12px;
+}
+
+body main .why-us .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 155px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .why-us .block .box {
+  width: 367px;
+  height: 180px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+body main .why-us .block .box p {
+  margin: 72px auto;
+  width: 270px;
+  line-height: 26px;
+  height: 78px;
+}
+
+body main .why-us .block .box img {
+  position: absolute;
+  top: -58px;
+  left: 106px;
+}
+
+body main .university {
+  margin-top: 150px;
+}
+
+body main .university h1 {
+  text-align: center;
+}
+
+body main .university p {
+  width: 423px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 16px auto 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,255 @@
+@import "variables";
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#d-f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.zakaz {
+  width: 215px;
+  height: 48px;
+  @extend #d-f;
+  background: $white;
+  border-radius: 25px;
+  justify-content: start;
+  img {
+    margin-left: 5px;
+    margin-right: 14px;
+  }
+  a {
+    color: $sfsk;
+    font-family: "Gotham Pro Bold";
+  }
+}
+body {
+  width: 1440px;
+  color: $link-color;
+  font-family: "Gotham Pro";
+  background-color: $bg-color;
+  .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  //header start
+  header {
+    height: 900px;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // nav start
+    nav {
+      height: 102px;
+      margin-top: -2px;
+      @extend #d-f;
+      .logo {
+        @extend #d-f;
+        img {
+          margin-left: 15px;
+          &:first-child {
+            margin-top: -8px;
+            margin-left: 3px;
+          }
+          &:last-child {
+            margin-left: -11px;
+            margin-right: 1px;
+          }
+        }
+      }
+      .menu {
+        list-style: none;
+        li {
+          margin-right: 16px;
+          display: inline-block;
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            font-size: 14px;
+            color: $link-color;
+            font-family: "Gotham Pro Medium";
+          }
+        }
+      }
+      .language {
+        @extend #d-f;
+        ul {
+          margin-left: 36px;
+          margin-right: 5px;
+          li {
+            display: inline-block;
+            a {
+              font-size: 12px;
+              color: $link-color;
+              font-family: sans-serif;
+            }
+            &:first-child {
+              margin-right: 19px;
+              a {
+                color: $sfsk;
+                font-family: "Gotham Pro Bold";
+              }
+            }
+          }
+        }
+      }
+    }
+    // nav end
+
+    // header-content start
+    .header-content {
+      h1 {
+        width: 721px;
+        height: 120px;
+        font-size: 44px;
+        margin-top: 99px;
+        font-weight: 700;
+        line-height: 60px;
+        font-family: "Gotham Pro Bold";
+        span {
+          color: $sfsk;
+        }
+      }
+      p {
+        width: 677px;
+        height: 78px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 27px;
+        line-height: 26px;
+        color: $link-color;
+        font-family: "Gotham Pro";
+      }
+      div {
+        @extend .zakaz;
+        width: 240px;
+        background: $sfsk;
+        margin-top: 51px;
+        img {
+          margin-right: 16px;
+        }
+        a {
+          color: $white;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    // header-content end
+    .header-footer {
+      display: flex;
+      margin-top: 319px;
+      position: relative;
+      align-items: center;
+      div {
+        font-family: "Gotham Pro";
+        display: flex;
+        font-size: 15px;
+        margin-right: 11px;
+        align-items: center;
+        &:nth-child(odd) {
+          font-family: "Gotham Pro Bold";
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+      .last-child {
+        margin-left: 32px;
+      }
+      .tree {
+        top: -181px;
+        left: -150px;
+        position: absolute;
+      }
+    }
+  } // header end
+
+  // main start
+  main {
+    margin-top: 98px;
+    span {
+      font-weight: 700;
+    }
+    h1 {
+      font-size: 36px;
+      color: $sfsk;
+      font-family: "Gotham Pro Bold";
+    }
+    .why-us {
+      // height: 388px;
+      @extend .wrapper;
+      font-size: 18px;
+      text-align: center;
+      color: $link-color;
+
+      .why-us-heading {
+        width: 437px;
+        height: 52px;
+        line-height: 26px;
+        margin: 0 auto;
+        h1 {
+          margin-top: 12px;
+        }
+      }
+      .block {
+        display: flex;
+        margin-top: 155px;
+        justify-content: space-between;
+        .box {
+          width: 367px;
+          height: 180px;
+          position: relative;
+          border-radius: 20px;
+          background-color: $white;
+          p {
+            margin: 72px auto;
+            width: 270px;
+            line-height: 26px;
+            height: 78px;
+          }
+          img {
+            position: absolute;
+            top: -58px;
+            left: 106px;
+          }
+        }
+      }
+    }
+    .university {
+      margin-top: 150px;
+      h1 {
+        text-align: center;
+      }
+      p {
+        width: 423px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        margin: 16px auto 0;
+      }
+    }
+  } // main end
+}
