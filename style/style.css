@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Gotham Pro";
-  src: url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  src: url("../fonts/GothamPro.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gotham Pro Medium";
-  src: url("../fonts/GothamPro/GothamPro-Medium.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gotham Pro Bold";
-  src: url("../fonts/GothamPro/GothamPro-Bold.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Bold.ttf") format("truetype");
 }
 
 * {
